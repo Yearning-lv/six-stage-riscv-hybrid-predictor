@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Six-Stage RV32I RISC-V CPU with Hybrid Branch Prediction"
+version: "v1.0.0"
+date-released: 2026-09-09
+authors:
+  - family-names: "Mao"
+    given-names: "Jiaqing"
+    affiliation: "Shandong University"
+repository-code: "https://github.com/Yearning-lv/six-stage-riscv-hybrid-predictor"
+license: "MIT"
+keywords:
+  - RISC-V
+  - RV32I
+  - six-stage pipeline
+  - hybrid branch prediction
+  - FPGA
+  - CPU
+abstract: >
+  An FPGA-oriented six-stage RV32I RISC-V processor featuring BTB,
+  PHT, Gshare, RAS, trace differential testing, and FPGA validation.
