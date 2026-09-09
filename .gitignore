@@ -1,0 +1,28 @@
+# Generated simulation and FPGA tool outputs
+sim_artifacts/
+*.vvp
+*.vcd
+*.wdb
+*.jou
+*.log
+*.rpt
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.gen/
+*.xpr
+*.bit
+*.bin
+*.ltx
+local-vivado-project/
+
+# Local editor and OS files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+
+# Local machine paths and private submission material
+submission/
