@@ -1,0 +1,40 @@
+instruction_id,mnemonic,format,opcode,funct3,funct7,test_word_indices,verification_observation,coverage_status,notes
+1,add,R,0110011,000,0000000,"10,22,23,25",register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+2,sub,R,0110011,000,0100000,26,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+3,and,R,0110011,111,0000000,27,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+4,or,R,0110011,110,0000000,29,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+5,xor,R,0110011,100,0000000,31,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+6,sll,R,0110011,001,0000000,33,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+7,srl,R,0110011,101,0000000,34,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+8,sra,R,0110011,101,0100000,38,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+9,slt,R,0110011,010,0000000,40,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+10,sltu,R,0110011,011,0000000,46,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+11,addi,I,0010011,000,NA,"0,1,15,16,18,19,20,21,37,51,52,62,63,64,65,68,71,73,76,78,81,83,86,88,91,94,95,98",register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+12,slti,I,0010011,010,NA,41,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+13,sltiu,I,0010011,011,NA,66,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+14,andi,I,0010011,111,NA,28,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+15,ori,I,0010011,110,NA,"30,54",register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+16,xori,I,0010011,100,NA,32,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+17,slli,I,0010011,001,0000000,35,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+18,srli,I,0010011,101,0000000,36,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+19,srai,I,0010011,101,0100000,39,register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+20,lui,U,0110111,NA,NA,"47,53",register and memory checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+21,auipc,U,0010111,NA,NA,48,memory check in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+22,lb,I,0000011,000,NA,56,memory check in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+23,lh,I,0000011,001,NA,58,memory check in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+24,lw,I,0000011,010,NA,"6,24,60",register and memory checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+25,lbu,I,0000011,100,NA,3,register and memory checks in tb_missing_mem_v1_7.v,present_in_separate_pass,covered by the supplementary memory test
+26,lhu,I,0000011,101,NA,7,register and memory checks in tb_missing_mem_v1_7.v,present_in_separate_pass,covered by the supplementary memory test
+27,sb,S,0100011,000,NA,2,memory check in tb_missing_mem_v1_7.v,present_in_separate_pass,covered by the supplementary memory test
+28,sh,S,0100011,001,NA,6,memory check in tb_missing_mem_v1_7.v,present_in_separate_pass,covered by the supplementary memory test
+29,sw,S,0100011,010,NA,"5,45,49,50,55,57,59,61,70,75,80,85,90,96,97",memory checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+30,beq,B,1100011,000,NA,14,control-flow and memory checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+31,bne,B,1100011,001,NA,67,control-flow and memory checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+32,blt,B,1100011,100,NA,72,control-flow and memory checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+33,bge,B,1100011,101,NA,82,control-flow and memory checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+34,bltu,B,1100011,110,NA,77,control-flow and memory checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+35,bgeu,B,1100011,111,NA,87,control-flow and memory checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+36,jal,J,1101111,NA,NA,17,control-flow and register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+37,jalr,I,1100111,000,NA,93,control-flow and register checks in tb_37_instr_byte_bram_v1_7.v,present_in_hex_aggregate_pass,appears in the aggregate test program
+
+

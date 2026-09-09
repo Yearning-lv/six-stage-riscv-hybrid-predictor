@@ -1,0 +1,9 @@
+version,avg_cycle,avg_cpi,avg_ipc,total_stall,total_flush,total_mispredict,avg_prediction_accuracy,lut,ff,bram_tile,ramb18,wns_ns,whs_ns,power_w,lut_delta_pct,ff_delta_pct,power_delta_pct,bitstream,simulation_result,notes
+No Predictor,182.60,2.2344,0.4577,48,135,135,0.0901,1917,1663,2.5,5,0.767,0.166,0.115,0.00,0.00,0.00,PASS,PASS,"Six-stage RV32I baseline without branch predictor"
+BTB,129.80,1.4506,0.6956,48,47,47,0.7796,2269,2740,2.5,5,0.937,0.081,0.122,18.36,64.76,6.09,PASS,PASS,"BTB target prediction"
+BTB+PHT,120.80,1.3897,0.7209,48,32,32,0.8265,2322,2772,2.5,5,0.605,0.110,0.123,21.13,66.69,6.96,PASS,PASS,"BTB plus local two-bit direction prediction"
+BTB+Gshare,124.40,1.5017,0.6739,48,38,38,0.7099,2334,2792,2.5,5,0.747,0.111,0.123,21.75,67.89,6.96,PASS,PASS,"BTB plus global-history Gshare"
+BTB+Gshare+RAS,123.20,1.4835,0.6812,48,36,36,0.7244,2414,2942,2.5,5,0.937,0.111,0.124,25.93,76.91,7.83,PASS,PASS,"Gshare plus return-address stack"
+Hybrid,113.00,1.3370,0.7537,48,19,19,0.8671,2331,3030,2.5,5,0.858,0.098,0.125,21.60,82.20,8.70,PASS,PASS,"BTB plus PHT, Gshare, selector and RAS"
+
+

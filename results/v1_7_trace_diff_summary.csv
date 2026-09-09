@@ -1,0 +1,7 @@
+"version","commits","status"
+"No Predictor","75","PASS"
+"BTB","75","PASS"
+"BTB+PHT","75","PASS"
+"BTB+Gshare","75","PASS"
+"BTB+Gshare+RAS","75","PASS"
+"Hybrid","75","PASS"

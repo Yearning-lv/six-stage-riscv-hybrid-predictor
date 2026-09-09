@@ -1,0 +1,17 @@
+claim_id,claim_summary,evidence_ids,verification_status,notes
+C001,Six-stage pipeline uses IF ID EX MEM1 MEM2 WB,E001,Evidence recorded in local experiment summary; human final verification required,unverified
+C002,Current verified set contains 37 RV32I instructions and BRAM-oriented memories,E002;E003;E017;E018,33 instructions are covered by the aggregate program and lbu/lhu/sb/sh by a supplementary passing test; final human review required,verified_locally
+C003,Forwarding and load-use stall are implemented,E004;E006,Verify exact signal behavior against RTL before submission,partially_verified
+C004,Control transfer uses flush on wrong-path instructions,E004;E006,Verify branch and jal flush definitions,partially_verified
+C005,Hybrid combines BTB PHT Gshare Selector and RAS,E006,Verify module interfaces and update conditions,partially_verified
+C006,Experiments use A7-LITE 100T XC7A100T-FGG484-2L Vivado 2023.2 and five benchmarks,E007;E008,Human should verify project settings and benchmark stop conditions,partially_verified
+C007,Hybrid reduces average cycles by 38.12 percent and flush by 85.93 percent,E008,Derived from five benchmark rows,unverified
+C008,Average prediction accuracy is an unweighted benchmark average,E004,Keep this caveat or replace with weighted metric,unverified
+C009,Hybrid resource deltas are 414 LUT and 1367 FF versus baseline,E009;E010,Derived from Vivado reports,unverified
+C010,Hybrid meets 50 MHz timing with WNS 0.858 ns and bitstream PASS,E011,Verify report and bitstream provenance,unverified
+C011,Capacity GHR and RAS sweeps show diminishing returns,E012;E013;E014,Exploratory parameter result,unverified
+C012,50 MHz passes while 60 and 80 MHz have negative WNS,E015,70/90/100 MHz incomplete and excluded,unverified
+C013,Board smoke test showed LED0 blinking and LED1 on,E016,Replace with UART/signature evidence for stronger claim,partially_verified
+C014,All six v1.7 predictor versions match the RV32I reference model on the main instruction trace,E019,Each version matched 75 valid commit events and final data memory locally; four additional memory instructions were checked by supplementary test evidence E017 and E018,verified_locally
+
+

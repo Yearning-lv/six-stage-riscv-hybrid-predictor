@@ -1,0 +1,9 @@
+version,cpu_file,top_file,lut,ff,bram_tile,ramb18,dsp,wns_ns,tns_ns,whs_ns,power_w,bitstream,notes
+No Predictor,riscv_cpu_fpga_37_byte_bram_test.v,a7lite_riscv_top_nopred_v1_7.v,1917,1663,2.5,5,0,0.767,0.000,0.166,0.115,PASS,impl_1 bitstream generated on 2026-09-06
+BTB,riscv_cpu_fpga_37_byte_bram_btb_test.v,a7lite_riscv_top_btb_v1_7.v,2269,2740,2.5,5,0,0.937,0.000,0.081,0.122,PASS,impl_1 bitstream generated on 2026-09-06
+BTB+PHT,riscv_cpu_fpga_37_byte_bram_btb_pht_test.v,a7lite_riscv_top_btb_pht_v1_7.v,2322,2772,2.5,5,0,0.605,0.000,0.110,0.123,PASS,impl_1 bitstream generated on 2026-09-06
+BTB+Gshare,riscv_cpu_fpga_37_byte_bram_btb_gshare_test.v,a7lite_riscv_top_btb_gshare_v1_7.v,2334,2792,2.5,5,0,0.747,0.000,0.111,0.123,PASS,impl_1 bitstream generated on 2026-09-06
+BTB+Gshare+RAS,riscv_cpu_fpga_37_byte_bram_btb_gshare_ras_test.v,a7lite_riscv_top_btb_gshare_ras_v1_7.v,2414,2942,2.5,5,0,0.937,0.000,0.111,0.124,PASS,impl_1 bitstream generated on 2026-09-06
+Hybrid,riscv_cpu_fpga_37_byte_bram_hybrid_predictor_sync_reset_test.v,a7lite_riscv_top_hybrid_v1_7.v,2331,3030,2.5,5,0,0.858,0.000,0.098,0.125,PASS,impl_1 bitstream generated on 2026-09-06
+
+
