@@ -55,8 +55,7 @@ than a complete theoretical maximum-frequency scan.
 
 ## License and Citation
 
-This code and data package is provided for research reproducibility. This project is released under the MIT License.
-All RTL, test programs and result records should be reviewed by the author
-before publication.
+This project is released under the MIT License.
 
+If you use this repository in academic work, please cite the v1.0.0 release and the `CITATION.cff` metadata.
 
