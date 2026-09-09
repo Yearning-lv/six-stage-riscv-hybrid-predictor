@@ -55,8 +55,7 @@ than a complete theoretical maximum-frequency scan.
 
 ## License and Citation
 
-This code and data package is provided for research reproducibility. Add the
-preferred license and citation information before making the repository public.
+This code and data package is provided for research reproducibility. This project is released under the MIT License.
 All RTL, test programs and result records should be reviewed by the author
 before publication.
 
